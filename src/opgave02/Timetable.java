@@ -7,7 +7,13 @@ public class Timetable {
     }
 
     private static void printDepartures(Departure[] departures) {
-        // TODO: Write your code here
+        System.out.println("Destination | Peron | Ankomst | Afgang");
+        for (int index = 0; index < 8; index++) {
+            System.out.printf("%11s", departures[index].destination);
+            System.out.printf("%6d", departures[index].perron);
+            System.out.printf("%11s", departures[index].arrival);
+            System.out.printf("%10s\n", departures[index].arrival);
+        }
     }
 
     private static Departure[] getDepartures() {
